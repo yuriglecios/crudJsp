@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 20px;
+	}
+
+	td {
+		padding: 10px;
+		text-align: left;
+		vertical-align: middle;
+		border: 1px solid #ccc;
+	}
+
+	input[type="text"] {
+		display: block;
+		width: 100%;
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		box-sizing: border-box;
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	input[type="submit"] {
+		background-color: #4CAF50;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #3e8e41;
+	}
+	h1 {
+		text-align: center;
+	}
+
+
+</style>
+</head>
+<body>
+
+<h1>Adicione um novo usuário</h1>
+
+<form action="addusuario.jsp" method="post">
+		<table>
+			<tr>
+				<td>Nome:</td>
+				<td><input type="text" name="nome"></td>
+			</tr>
+			<tr>
+				<td>Cpf:</td>
+				<td><input type="text" name="cpf"></td>
+			</tr>
+			<tr>
+				<td>Idade:</td>
+				<td><input type="text" name="idade"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<input type="submit" value="Salvar usuário">
+				</td>
+			</tr>
+			
+		</table>
+</form>
+</body>
+</html>
